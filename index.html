@@ -8,15 +8,16 @@
   <link rel="stylesheet" href="curriculum.css" />
 </head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <!-- Librería emoticonos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 <body>
 
   <!-- Encabezado -->
   <header class="header">
 
-    <!-- Parte superior -->
+    <!-- Cabecera -->
     <div class="header-top">
       <h1>Leire Bernárdez y Carmen Reiné</h1>
       <h2>Ingenieras de Datos</h2>
@@ -38,7 +39,7 @@
       </div>
       <div class="col">
         <i class="fa-brands fa-github"></i>
-        <p><a href="https://github.com/carmenreine" target="_blank">github.com</a></p>
+        <p><a href="https://github.com/carmenreine/carmenreine.github.io" target="_blank">github.com</a></p>
       </div>
 
     </div>
@@ -47,7 +48,7 @@
   <!-- Contenedor principal -->
   <div class="contenedor">
 
-    <!-- Columna izquierda (navegador) -->
+    <!-- Columna izquierda  -->
     <aside class="col-izq">
       <div class="foto">
         <img src="perfil.png" alt="Foto">
@@ -62,39 +63,37 @@
       </nav>
     </aside>
 
-    <!-- Columna derecha (contenido) -->
+    <!-- Columna derecha -->
     <main class="col-der">
+
       <section id="perfil" class="seccion activa" aria-labelledby="btn-perfil">
         <h3>PERFIL</h3>
         <p>
           Estudiantes de Ciencia e Ingeniería de Datos con interés en el desarrollo de software,
-          análisis de datos y ciberseguridad. Nos motiva aprender nuevas tecnologías y
+          análisis de datos y ciberseguridad. Nos motiva aprender nuevas tecnologías y 
           participar en proyectos colaborativos y de investigación, que aporten soluciones innovadoras.
           Destacamos por nuestra capacidad de trabajo en equipo, pensamiento analítico y rápida adaptación.
         </p>
 
         <h3>IDIOMAS</h3>
-        <div class="skill">
-          <span>Español</span>
-          <div class="barra">
-            <div class="progreso" style="width: 100%;">Nativo</div>
-          </div>
-        </div>
-
-        <div class="skill">
+        <!-- Circulos para idiomas usando caracteres especiales -->
+        <div class="idioma">
           <span>Inglés</span>
-          <div class="barra">
-            <div class="progreso" style="width: 70%;">Intermedio (B2)</div>
-          </div>
+          <span class="nivel">
+            &#9679; &#9679; &#9679; &#9675; &#9675;  
+            <span class="texto">C1</span>
+          </span>
         </div>
 
-        <div class="skill">
-          <span>Francés</span>
-          <div class="barra">
-            <div class="progreso" style="width: 40%;">Básico</div>
-          </div>
+        <div class="idioma">
+          <span>Alemán</span>
+          <span class="nivel">
+            &#9679; &#9679; &#9675; &#9675; &#9675;  
+            <span class="texto">B1</span>
+          </span>
         </div>
       </section>
+
       <section id="experiencia" class="seccion" aria-labelledby="btn-experiencia">
         <h3>EXPERIENCIA</h3>
         <p><b>Proyecto académico:</b> Desarrollo de sistemas distribuidos (2025)</p>
@@ -108,46 +107,39 @@
         <h3>HABILIDADES</h3>
         <p>Entre nuestras habilidades destacan: </p>
         <ul>
-          <li><b>Lenguajes de programación:</b> Java, Python, SQL, MongoDB</li>
-          <li><b>Desarrollo web:</b> HTML, CSS, JavaScript</li>
           <li><b>Herramientas:</b> Git, Linux, Windows</li>
           <li><b>Otros:</b> Análisis de datos, visualización de datos y redes de ordenadores</li>
+          <li><b>Soft skills:</b> Trabajo en equipo, comunicación, adaptabilidad y resolución de problemas</li>
         </ul>
 
+        <h3>LENGUAJES DE PROGRAMACIÓN</h3>
         <div class="skill">
           <span>Java</span>
           <div class="barra">
-            <div class="progreso" style="width: 80%;">80%</div>
-          </div>
-        </div>
+                <div class="progreso" style="width: 60%;">60%</div>
+              </div>
+            </div>
 
-        <div class="skill">
-          <span>Python</span>
-          <div class="barra">
-            <div class="progreso" style="width: 90%;">90%</div>
-          </div>
-        </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra">
+                <div class="progreso" style="width: 90%;">90%</div>
+              </div>
+            </div>
 
-        <div class="skill">
-          <span>C</span>
-          <div class="barra">
-            <div class="progreso" style="width: 70%;">70%</div>
-          </div>
-        </div>
+            <div class="skill">
+              <span>SQL</span>
+              <div class="barra">
+                <div class="progreso" style="width: 70%;">70%</div>
+              </div>
+            </div>
 
-        <div class="skill">
-          <span>SQL</span>
-          <div class="barra">
-            <div class="progreso" style="width: 85%;">85%</div>
-          </div>
-        </div>
-
-        <div class="skill">
-          <span>HTML / CSS / JS</span>
-          <div class="barra">
-            <div class="progreso" style="width: 75%;">75%</div>
-          </div>
-        </div>
+            <div class="skill">
+              <span>HTML / CSS / JS</span>
+              <div class="barra">
+                <div class="progreso" style="width: 45%;">45%</div>
+              </div>
+            </div>
 
       </section>
 
@@ -161,7 +153,7 @@
 
   </div>
 
-  <!-- JS: navega y muestra/oculta secciones -->
+  <!-- Conexion con JavaScript -->
   <script src="curriculum.js"> </script>
 </body>
 

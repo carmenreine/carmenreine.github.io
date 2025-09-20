@@ -1,4 +1,4 @@
-/* === Menú lateral y secciones === */
+/*  Menú lateral y secciones*/
 .menu { 
   display: grid; 
   gap: .5rem; 
@@ -13,34 +13,27 @@
   border-radius: .6rem; 
   cursor: pointer; 
   font-weight: 600;
-  background:#eef0f6;
+  background: #eef0f6;
   transition: background 0.2s ease-in-out;
 }
 
-.menu button:hover {
-  background:#e0e3ee;
-}
-
+.menu button:hover { background:#e0e3ee; }
 .menu button.is-active { 
   background:#dfe3f1; 
   outline: 2px solid #b8c1e5; 
 }
 
-.seccion { 
-  display:none; 
-}
+.seccion { display:none; }
+.seccion.activa { display:block; }
 
-.seccion.activa { 
-  display:block; 
-}
-
-/* === General === */
+/* General */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #333;
 }
 
+/* Encabezado */
 .header {
   background-color: #15153d;
   color: white;
@@ -48,13 +41,11 @@ body {
   padding: 30px 20px;
 }
 
-/* Parte superior */
 .header-top h1 {
   margin: 0;
   font-size: 2em;
   font-weight: bold;
 }
-
 .header-top h2 {
   margin: 8px 0 20px 0;
   font-weight: normal;
@@ -62,7 +53,7 @@ body {
   color: #ddd;
 }
 
-/* Parte inferior (4 columnas) */
+/*Cabecera inferior (4 columnas) */
 .header-bottom {
   display: flex;
   justify-content: space-between;
@@ -70,35 +61,20 @@ body {
   padding-top: 20px;
   margin-top: 20px;
 }
-
 .header-bottom .col {
-  flex: 1; /* todas las columnas mismo ancho */
+  flex: 1;
   text-align: center;
-  border-right: 1px solid #444;
+  border-right: 1px solid #d4af37;
   padding: 0 15px;
 }
-
-.header-bottom .col:last-child {
-  border-right: none;
-}
-
-/* Iconos */
+.header-bottom .col:last-child { border-right: none; }
 .header-bottom i {
   display: block;
   font-size: 1.4em;
   margin-bottom: 6px;
-  color: #d4af37; /* dorado */
+  color: #d4af37;
 }
-
-.header-bottom p {
-  margin: 0;
-  font-size: 0.95em;
-}
-
-.contacto p {
-  margin: 5px 0;
-  font-size: 0.9em;
-}
+.header-bottom p { margin: 0; font-size: 0.95em; }
 
 /* Contenedor principal */
 .contenedor {
@@ -113,23 +89,20 @@ body {
   background-color: #f4f4f9;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 }
-
-/* Imagen de perfil */
 .foto {
   display: flex;
-  justify-content: center; /* centra horizontalmente */
+  justify-content: center;
   margin-bottom: 20px;
 }
-
 .foto img {
-  width: 200px;          /* tamaño fijo, puedes ajustar */
+  width: 200px;
   height: 200px;
-  border-radius: 50%;    /* círculo */
-  object-fit: cover;     /* recorta para que encaje bien */
-  border: 4px solid #fff; /* opcional: borde blanco elegante */
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.1); /* opcional: sombra */
-  
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
 }
 
 /* Columna derecha */
@@ -145,29 +118,35 @@ body {
 h3 {
   border-bottom: 2px solid #2c2c54;
   padding-bottom: 5px;
-  margin-top: 20px;
+  margin: 20px 0 10px;
   color: #2c2c54;
 }
-
-.skill {
-  margin-bottom: 15px;
+/* Espaciar texto perfil */
+#perfil p {
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
+#perfil p {
+  line-height: 1.8;
+  margin-bottom: 40px; 
+}
+
+/* Barras Skills */
+.skill { margin-bottom: 15px; }
 .skill span {
   display: block;
   font-weight: 600;
   margin-bottom: 5px;
 }
-
 .barra {
   background: #eee;
   border-radius: 8px;
   overflow: hidden;
   height: 20px;
 }
-
 .progreso {
-  background: linear-gradient(90deg, #2c2c54, #4e54c8);
+  background: linear-gradient(90deg, #2c2c54, #c520db);
   color: white;
   text-align: right;
   padding-right: 8px;
@@ -178,3 +157,23 @@ h3 {
   font-weight: bold;
   transition: width 1s ease-in-out;
 }
+
+/* Circulos Idiomas */
+.idioma {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.nivel {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: #2c2c54;
+  gap: 6px;
+}
+.nivel .texto {
+  font-size: 14px;
+  color: #555;
+}
+
