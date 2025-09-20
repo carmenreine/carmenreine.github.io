@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Currículum - Leire Bernárdez y Carmen Reiné</title>
+  <link rel="icon" type="image/png" href="perfil.png"> <!-- Icono pestaña -->
+  <link rel="stylesheet" href="curriculum.css" />
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Librería emoticonos -->
+
+<body>
+
+  <!-- Encabezado -->
+  <header class="header">
+
+    <!-- Parte superior -->
+    <div class="header-top">
+      <h1>Leire Bernárdez y Carmen Reiné</h1>
+      <h2>Ingenieras de Datos</h2>
+    </div>
+
+    <!-- Secciones de la cabecera  -->
+    <div class="header-bottom">
+      <div class="col">
+        <i class="fa-solid fa-envelope"></i>
+        <p>leirecarmen@gmail.com</p>
+      </div>
+      <div class="col">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Madrid, España</p>
+      </div>
+      <div class="col">
+        <i class="fa-solid fa-phone"></i>
+        <p>+34 600 000 000</p>
+      </div>
+      <div class="col">
+        <i class="fa-brands fa-github"></i>
+        <p><a href="https://github.com/carmenreine" target="_blank">github.com</a></p>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Contenedor principal -->
+  <div class="contenedor">
+
+    <!-- Columna izquierda (navegador) -->
+    <aside class="col-izq">
+      <div class="foto">
+        <img src="perfil.png" alt="Foto">
+      </div>
+
+      <!-- Menú barra izquierda -->
+      <nav class="menu" aria-label="Secciones del CV">
+        <button class="is-active" data-target="perfil">Perfil</button>
+        <button data-target="experiencia">Experiencia</button>
+        <button data-target="habilidades">Habilidades</button>
+        <button data-target="contacto">Contacto</button>
+      </nav>
+    </aside>
+
+    <!-- Columna derecha (contenido) -->
+    <main class="col-der">
+      <section id="perfil" class="seccion activa" aria-labelledby="btn-perfil">
+        <h3>PERFIL</h3>
+        <p>
+          Estudiantes de Ciencia e Ingeniería de Datos con interés en el desarrollo de software,
+          análisis de datos y ciberseguridad. Nos motiva aprender nuevas tecnologías y
+          participar en proyectos colaborativos y de investigación, que aporten soluciones innovadoras.
+          Destacamos por nuestra capacidad de trabajo en equipo, pensamiento analítico y rápida adaptación.
+        </p>
+
+        <h3>IDIOMAS</h3>
+        <div class="skill">
+          <span>Español</span>
+          <div class="barra">
+            <div class="progreso" style="width: 100%;">Nativo</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Inglés</span>
+          <div class="barra">
+            <div class="progreso" style="width: 70%;">Intermedio (B2)</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Francés</span>
+          <div class="barra">
+            <div class="progreso" style="width: 40%;">Básico</div>
+          </div>
+        </div>
+      </section>
+      <section id="experiencia" class="seccion" aria-labelledby="btn-experiencia">
+        <h3>EXPERIENCIA</h3>
+        <p><b>Proyecto académico:</b> Desarrollo de sistemas distribuidos (2025)</p>
+        <p><b>Proyecto académico (2025):</b> Desarrollo de una aplicación en Java, inspirado en la aplicación "Vinted".
+        </p>
+        <p><b>Proyecto académico (2025):</b> Participación en una práctica de investigación sobre seguridad en redes,
+          implementando pruebas de falsificación en entornos controlados.</p>
+        <p><b>Proyecto académico (2024):</b> Análisis de datos en Python y SQL.</p>
+      </section>
+      <section id="habilidades" class="seccion" aria-labelledby="btn-habilidades">
+        <h3>HABILIDADES</h3>
+        <p>Entre nuestras habilidades destacan: </p>
+        <ul>
+          <li><b>Lenguajes de programación:</b> Java, Python, SQL, MongoDB</li>
+          <li><b>Desarrollo web:</b> HTML, CSS, JavaScript</li>
+          <li><b>Herramientas:</b> Git, Linux, Windows</li>
+          <li><b>Otros:</b> Análisis de datos, visualización de datos y redes de ordenadores</li>
+        </ul>
+
+        <div class="skill">
+          <span>Java</span>
+          <div class="barra">
+            <div class="progreso" style="width: 80%;">80%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>Python</span>
+          <div class="barra">
+            <div class="progreso" style="width: 90%;">90%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>C</span>
+          <div class="barra">
+            <div class="progreso" style="width: 70%;">70%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>SQL</span>
+          <div class="barra">
+            <div class="progreso" style="width: 85%;">85%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>HTML / CSS / JS</span>
+          <div class="barra">
+            <div class="progreso" style="width: 75%;">75%</div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="contacto" class="seccion">
+        <h3>CONTACTO</h3>
+        <p>Manda un correo pinchando aquí:</p>
+        <p><a href="mailto:leirecarmen@gmail.com">Enviar correo</a></p>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- JS: navega y muestra/oculta secciones -->
+  <script src="curriculum.js"> </script>
+</body>
+
+</html>
