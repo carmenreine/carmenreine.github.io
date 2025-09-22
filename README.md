@@ -23,4 +23,4 @@ La página está publicada mediante **GitHub Pages** y puede visualizarse en el 
 
 ---
 
-✦ Elaborado por el Leire Bernárdez Vázquez como parte de la práctica de **HTML, CSS y JavaScript**.
+✦ Elaborado por el Leire Bernárdez Vázquez Y Carmen Reiné Rueda como parte de la práctica de **HTML, CSS y JavaScript**.
